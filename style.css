@@ -1186,3 +1186,1315 @@ body {
     .hero-center { padding: 0 20px; padding-top: 80px; }
     .hero-cta-row { flex-direction: column; }
 }
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum GENI Entreprises — INPT Rabat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav class="navbar" id="mainNav">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a class="nav-brand" href="#">CLUB FGE <span style="color:var(--gold-light);font-style:italic;font-size:0.85em;">· INPT</span></a>
+    <div class="d-none d-lg-flex align-items-center gap-1">
+      <a class="nav-item-link" href="#accueil">Accueil</a>
+      <a class="nav-item-link" href="#histoire">Histoire</a>
+      <a class="nav-item-link" href="#staff">Le Staff</a>
+      <a class="nav-item-link" href="#stats">Chiffres</a>
+      <a class="nav-item-link" href="#partenaires">Partenaires</a>
+      <a class="nav-item-link nav-item-link--cta" href="#inscription">S'inscrire</a>
+    </div>
+  </div>
+</nav>
+
+<header id="accueil" class="hero-new">
+  <div class="hero-bg-img"></div>
+  <div class="hero-bg-overlay"></div>
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-lines">
+    <div class="hero-line hero-line-1"></div>
+    <div class="hero-line hero-line-2"></div>
+    <div class="hero-line hero-line-3"></div>
+  </div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="hero-center">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      <span class="hero-badge-text">
+        <a title="Localisation" href="https://maps.google.com/?q=INPT+Rabat" target="_blank" style="text-decoration: none; color: inherit;">
+          INPT · Rabat · Maroc
+        </a>
+      </span>
+    </div>
+
+    <h1 class="hero-main-title">
+      <span class="hero-word hero-word-1">Forum</span>
+      <span class="hero-word hero-word-2"> GENI</span>
+      <span class="accent hero-word hero-word-3">Entreprises</span>
+    </h1>
+
+    <div class="hero-divider-line"></div>
+
+    <p class="hero-tagline">
+      <b>Le pont entre les élèves ingénieurs <br>et le monde professionnel.</b>
+    </p>
+
+    <div class="hero-cta-row">
+      <a href="#histoire" class="btn-gold">
+        <span>Découvrir le club</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#inscription" class="btn-outline-gold">S'inscrire au Forum</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="hero-scroll-track"></div>
+    <span>Défiler</span>
+  </div>
+</header>
+
+<section id="histoire" class="histoire-section">
+  <div class="hist-watermark">FGE</div>
+  <div class="hist-grid"></div>
+  <div class="hist-glow hist-glow-1"></div>
+  <div class="hist-glow hist-glow-2"></div>
+  <div class="hist-side-accent"></div>
+
+  <div class="container position-relative" style="z-index:2;">
+    <div class="row align-items-center gy-5">
+
+      <div class="col-lg-6 ps-lg-5" data-reveal-left>
+        <div class="eyebrow">Notre ADN</div>
+        <h2 class="hist-big-quote">
+          Forger les<br><strong>leaders</strong> de<br>demain.
+        </h2>
+        <div class="gold-bar"></div>
+        <p class="hist-body-text">
+          Fondé pour dynamiser l'insertion professionnelle, le Forum GENI Entreprises réunit chaque année les leaders du secteur technologique et les étudiants talentueux. Une institution majeure qui trace la voie vers l'excellence.
+        </p>
+        <p class="hist-body-text">
+          Cet évènement, organisé par 3 écoles prestigieuses de Rabat, à savoir l'INPT, l'ENSIAS et l'INSEA. Il constitue un pont, pour les étudiants, vers le monde professionnel.
+        </p>
+      </div>
+
+      <div class="col-lg-6" data-reveal-right data-delay="200">
+        <div class="missions-card">
+          <div class="mb-5">
+            <p class="missions-subtitle">Ce que nous faisons</p>
+            <h3 class="missions-title-text">Nos Missions</h3>
+          </div>
+
+          <div class="mission-item" data-reveal data-delay="300">
+            <span class="mission-num">01</span>
+            <div class="mission-content">
+              <p class="mission-label">Réseautage de haut niveau</p>
+              <div class="mission-progress mission-bar"></div>
+            </div>
+            <span class="mission-arrow">→</span>
+          </div>
+
+          <div class="mission-item" data-reveal data-delay="450">
+            <span class="mission-num">02</span>
+            <div class="mission-content">
+              <p class="mission-label">Accès privilégié aux stages PFA et PFE</p>
+              <div class="mission-progress mission-bar"></div>
+            </div>
+            <span class="mission-arrow">→</span>
+          </div>
+
+          <div class="mission-item" data-reveal data-delay="600">
+            <span class="mission-num">03</span>
+            <div class="mission-content">
+              <p class="mission-label">Partenariats stratégiques durables</p>
+              <div class="mission-progress mission-bar"></div>
+            </div>
+            <span class="mission-arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="staff" class="staff-section">
+  <div class="staff-bg-lines">
+    <div class="staff-bg-line"></div>
+    <div class="staff-bg-line"></div>
+    <div class="staff-bg-line"></div>
+  </div>
+
+  <div class="container position-relative" style="z-index:2;">
+    <div class="text-center mb-5" data-reveal>
+      <div class="eyebrow justify-content-center">Notre équipe</div>
+      <h2 class="display-title mt-3">Le <em>Staff</em> FGE</h2>
+      <div class="gold-bar centered"></div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4" data-reveal data-delay="0">
+        <div class="pole-card">
+          <div class="pole-card-top-line"></div>
+          <div class="pole-number">01</div>
+          <div class="pole-card-inner">
+            <div class="pole-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93A10 10 0 0 0 4.93 19.07M4.93 4.93A10 10 0 0 1 19.07 19.07"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+            </div>
+            <div class="pole-title">Pôle Organisation</div>
+            <div class="pole-sub">Coordination générale</div>
+            <p class="pole-desc">Assure la gestion globale et le respect du planning de l'événement annuel.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-reveal data-delay="160">
+        <div class="pole-card">
+          <div class="pole-card-top-line"></div>
+          <div class="pole-number">02</div>
+          <div class="pole-card-inner">
+            <div class="pole-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+            </div>
+            <div class="pole-title">Pôle Logistique</div>
+            <div class="pole-sub">Gestion technique</div>
+            <p class="pole-desc">En charge des infrastructures et de l'accueil des entreprises lors du forum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-reveal data-delay="320">
+        <div class="pole-card">
+          <div class="pole-card-top-line"></div>
+          <div class="pole-number">03</div>
+          <div class="pole-card-inner">
+            <div class="pole-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div class="pole-title">Pôle Sponsoring</div>
+            <div class="pole-sub">Relations extérieures</div>
+            <p class="pole-desc">Maintient le contact avec les recruteurs et développe les partenariats.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stats" class="stats-section">
+  <div class="stats-center-glow"></div>
+  <div class="stats-corner-deco tl"></div>
+  <div class="stats-corner-deco br"></div>
+
+  <div class="container position-relative" style="z-index:2;">
+    <div class="text-center mb-5" data-reveal>
+      <div class="eyebrow justify-content-center">En chiffres</div>
+      <h2 class="display-title mt-3">L'<em>impact</em> du Forum</h2>
+      <div class="gold-bar centered"></div>
+    </div>
+
+    <div class="row g-4 text-center">
+      <div class="col-md-4" data-reveal data-delay="0">
+        <div class="stat-block">
+          <span class="stat-icon-top">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </span>
+          <span class="stat-number"><span data-count="2000">0</span>+</span>
+          <div class="stat-label">Étudiants formés</div>
+        </div>
+      </div>
+      <div class="col-md-4" data-reveal data-delay="160">
+        <div class="stat-block">
+          <span class="stat-icon-top">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          </span>
+          <span class="stat-number"><span data-count="30">0</span>+</span>
+          <div class="stat-label">Entreprises partenaires</div>
+        </div>
+      </div>
+      <div class="col-md-4" data-reveal data-delay="320">
+        <div class="stat-block stat-clickable" id="ecolesCard">
+          <span class="stat-icon-top">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </span>
+          <span class="stat-number"><span data-count="3">0</span></span>
+          <div class="stat-label">Écoles organisatrices</div>
+          <div class="stat-click-hint">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Découvrir les écoles
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partenaires" class="partners-section">
+  <div class="partners-glow"></div>
+  <div class="container position-relative" style="z-index:2;">
+    <div class="text-center mb-5" data-reveal>
+      <div class="eyebrow justify-content-center">Networking</div>
+      <h2 class="display-title mt-3">Ils nous font <em>confiance</em></h2>
+      <div class="gold-bar centered"></div>
+    </div>
+    <div class="row g-4 justify-content-center align-items-center">
+      <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="0"><div class="logo-card"><img src="ocp.png" alt="OCP" class="logo-img"></div></div>
+      <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="80"><div class="logo-card"><img src="oracle.png" alt="Oracle" class="logo-img"></div></div>
+      <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="160"><div class="logo-card"><img src="bmce.png" alt="BMCE" class="logo-img"></div></div>
+      <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="240"><div class="logo-card"><img src="orangeb.png" alt="Orange" class="logo-img"></div></div>
+      <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="320"><div class="logo-card"><img src="maroc t.png" alt="Maroc Telecom" class="logo-img"></div></div>
+      <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="480"><div class="logo-card"><img src="orange.png" alt="Orange" class="logo-img"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="inscription" class="inscription-section">
+  <div class="inscription-glow inscription-glow-1"></div>
+  <div class="inscription-glow inscription-glow-2"></div>
+  <div class="inscription-grid"></div>
+  <div class="inscription-side-accent"></div>
+
+  <div class="container position-relative" style="z-index:2;">
+
+    <div class="text-center mb-5" data-reveal>
+      <div class="eyebrow justify-content-center">Rejoignez-nous</div>
+      <h2 class="display-title mt-3">Inscription au <em>Forum</em></h2>
+      <div class="gold-bar centered"></div>
+      <p class="inscription-intro-text">
+        Complétez le formulaire ci-dessous pour réserver votre place.<br>
+        Une <strong>invitation officielle</strong> sera envoyée à votre adresse e-mail — à présenter obligatoirement à l'entrée.
+      </p>
+    </div>
+
+    <div class="row justify-content-center" data-reveal data-delay="150">
+      <div class="col-lg-9 col-xl-8">
+        <div class="inscription-card">
+
+          <div class="inscription-badge">
+            <span class="inscription-badge-dot"></span>
+            <span>Accès limité — Places sur invitation uniquement</span>
+          </div>
+
+          <div id="inscriptionForm">
+
+            <div class="row g-4 mb-4">
+              <div class="col-md-6">
+                <div class="form-group-custom">
+                  <label class="form-label-custom" for="nomComplet">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Nom complet <span class="req">*</span>
+                  </label>
+                  <input type="text" id="nomComplet" class="input-custom" placeholder="Prénom Nom">
+                  <span class="input-line"></span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group-custom">
+                  <label class="form-label-custom" for="dateNaissance">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Date de naissance <span class="req">*</span>
+                  </label>
+                  <input type="date" id="dateNaissance" class="input-custom">
+                  <span class="input-line"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+              <div class="col-12">
+                <div class="form-group-custom">
+                  <label class="form-label-custom" for="cinInput">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                    Numéro CIN <span class="req">*</span>
+                  </label>
+                  <input type="text" id="cinInput" class="input-custom" placeholder="Ex : AB123456" maxlength="10">
+                  <span class="input-line"></span>
+                  <p class="input-hint">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    Votre CIN sera utilisé pour vérifier votre identité à l'entrée du forum.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+              <div class="col-12">
+                <div class="form-group-custom">
+                  <label class="form-label-custom">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    Vous êtes <span class="req">*</span>
+                  </label>
+                  <div class="statut-grid" id="statutGrid">
+                    <div class="statut-choice" data-value="etudiant">
+                      <div class="statut-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                      </div>
+                      <div class="statut-label">Étudiant(e)</div>
+                      <div class="statut-desc">En cours d'études</div>
+                    </div>
+                    <div class="statut-choice" data-value="jeune-diplome">
+                      <div class="statut-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                      </div>
+                      <div class="statut-label">Jeune diplômé(e)</div>
+                      <div class="statut-desc">Diplômé(e) récemment</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="blocEtudiant" class="bloc-conditionnel" style="display:none;">
+              <div class="row g-4 mb-4">
+                <div class="col-12">
+                  <div class="form-group-custom">
+                    <label class="form-label-custom">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                      École / Université actuelle <span class="req">*</span>
+                    </label>
+                    <div class="ecoles-grid mb-3" id="ecolesGridEtudiant">
+                      <div class="ecole-choice" data-value="INPT" data-group="etudiant"><div class="ecole-choice-logo ecole-choice-logo-1">INPT</div><span>INPT</span></div>
+                      <div class="ecole-choice" data-value="ENSIAS" data-group="etudiant"><div class="ecole-choice-logo ecole-choice-logo-2">ENSIAS</div><span>ENSIAS</span></div>
+                      <div class="ecole-choice" data-value="INSEA" data-group="etudiant"><div class="ecole-choice-logo ecole-choice-logo-3">INSEA</div><span>INSEA</span></div>
+                      <div class="ecole-choice" data-value="EMI" data-group="etudiant"><div class="ecole-choice-logo">EMI</div><span>EMI</span></div>
+                      <div class="ecole-choice" data-value="ENSA" data-group="etudiant"><div class="ecole-choice-logo">ENSA</div><span>ENSA</span></div>
+                      <div class="ecole-choice" data-value="__autre_e__" data-group="etudiant"><div class="ecole-choice-logo" style="font-size:1.1rem;">+</div><span>Autre</span></div>
+                    </div>
+                    <div id="autreEcoleEtudiantWrap" class="autre-ecole-wrap" style="display:none;">
+                      <input type="text" id="autreEcoleEtudiant" class="input-custom" placeholder="Nom de votre école / université">
+                      <span class="input-line"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-4 mb-4">
+                <div class="col-12">
+                  <div class="form-group-custom">
+                    <label class="form-label-custom">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                      Carte étudiante <span class="req">*</span>
+                    </label>
+                    <div class="upload-zone" id="uploadCarteZone" onclick="document.getElementById('carteEtudianteFile').click()">
+                      <input type="file" id="carteEtudianteFile" accept="image/*,.pdf" style="display:none;">
+                      <div class="upload-zone-inner" id="uploadCarteInner">
+                        <div class="upload-icon">
+                          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+                        </div>
+                        <p class="upload-title">Scanner / Photo de votre carte étudiante</p>
+                        <p class="upload-sub">JPG, PNG ou PDF — max 5 Mo</p>
+                      </div>
+                    </div>
+                    <p class="input-hint mt-2">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      Votre carte sera vérifiée manuellement par l'équipe FGE avant confirmation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="blocDiplome" class="bloc-conditionnel" style="display:none;">
+              <div class="row g-4 mb-4">
+                <div class="col-12">
+                  <div class="form-group-custom">
+                    <label class="form-label-custom">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                      Lauréat(e) de quelle école ? <span class="req">*</span>
+                    </label>
+                    <div class="ecoles-grid mb-3" id="ecolesGridDiplome">
+                      <div class="ecole-choice" data-value="INPT" data-group="diplome"><div class="ecole-choice-logo ecole-choice-logo-1">INPT</div><span>INPT</span></div>
+                      <div class="ecole-choice" data-value="ENSIAS" data-group="diplome"><div class="ecole-choice-logo ecole-choice-logo-2">ENSIAS</div><span>ENSIAS</span></div>
+                      <div class="ecole-choice" data-value="INSEA" data-group="diplome"><div class="ecole-choice-logo ecole-choice-logo-3">INSEA</div><span>INSEA</span></div>
+                      <div class="ecole-choice" data-value="EMI" data-group="diplome"><div class="ecole-choice-logo">EMI</div><span>EMI</span></div>
+                      <div class="ecole-choice" data-value="ENSA" data-group="diplome"><div class="ecole-choice-logo">ENSA</div><span>ENSA</span></div>
+                      <div class="ecole-choice" data-value="__autre_d__" data-group="diplome"><div class="ecole-choice-logo" style="font-size:1.1rem;">+</div><span>Autre</span></div>
+                    </div>
+                    <div id="autreEcoleDiplomeWrap" class="autre-ecole-wrap" style="display:none;">
+                      <input type="text" id="autreEcoleDiplome" class="input-custom" placeholder="Nom de votre école / université">
+                      <span class="input-line"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-4 mb-4">
+                <div class="col-12">
+                  <div class="form-group-custom">
+                    <label class="form-label-custom">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                      Diplôme ou attestation <span class="req">*</span>
+                    </label>
+                    <div class="upload-zone" id="uploadDiplomeZone" onclick="document.getElementById('diplomeFile').click()">
+                      <input type="file" id="diplomeFile" accept="image/*,.pdf" style="display:none;">
+                      <div class="upload-zone-inner" id="uploadDiplomeInner">
+                        <div class="upload-icon">
+                          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+                        </div>
+                        <p class="upload-title">Scanner / Photo de votre diplôme</p>
+                        <p class="upload-sub">JPG, PNG ou PDF — max 5 Mo</p>
+                      </div>
+                    </div>
+                    <p class="input-hint mt-2">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      Votre diplôme sera vérifié manuellement par l'équipe FGE avant confirmation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+              <div class="col-12">
+                <div class="form-group-custom">
+                  <label class="form-label-custom" for="emailInscription">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Adresse e-mail <span class="req">*</span>
+                  </label>
+                  <input type="email" id="emailInscription" class="input-custom" placeholder="votre@email.com">
+                  <span class="input-line"></span>
+                  <p class="input-hint">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    Votre invitation sera envoyée ici. Elle est <strong>obligatoire</strong> pour accéder au forum.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+              <div class="col-12">
+                <div class="form-group-custom">
+                  <label class="form-label-custom">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    À quel point la navigation sur le site vous a-t-elle semblé fluide ? <span class="req">*</span>
+                  </label>
+                  <div class="slider-wrapper">
+                    <div class="slider-labels">
+                      <span>Difficile</span>
+                      <span>Parfaite</span>
+                    </div>
+                    <div class="slider-track-container">
+                      <input type="range" id="navigationSlider" class="navigation-slider" min="1" max="10" value="5">
+                      <div class="slider-fill" id="sliderFill"></div>
+                    </div>
+                    <div class="slider-value-display">
+                      <span id="sliderValueText">Neutre</span>
+                      <span id="sliderValueNum" class="slider-num">5 / 10</span>
+                    </div>
+                    <div class="slider-emojis">
+                      <span>😕</span><span>😐</span><span>🙂</span><span>😊</span><span>🤩</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="formError" class="form-error-msg" style="display:none;"></div>
+
+            <div class="text-center">
+              <button type="button" id="submitBtn" class="btn-submit-inscription">
+                <span id="submitBtnText">
+                  Confirmer mon inscription
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+                <span id="submitBtnLoader" style="display:none;">
+                  <svg class="spin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                  Envoi en cours…
+                </span>
+              </button>
+              <p class="submit-note">En vous inscrivant, vous acceptez de recevoir l'invitation par e-mail.</p>
+            </div>
+
+          </div>
+
+          <div id="inscriptionSuccess" class="inscription-success" style="display:none;">
+            <div class="success-icon">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="success-title">Inscription confirmée !</h3>
+            <p class="success-text">
+              Merci <strong id="successName"></strong>, votre inscription au Forum GENI Entreprises a bien été enregistrée.
+            </p>
+            <div class="success-email-box">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Une invitation officielle a été envoyée à <strong id="successEmail"></strong>
+            </div>
+            <p class="success-reminder">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Présentez cette invitation à la sécurité à l'entrée le jour de l'événement.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row align-items-center mb-4">
+      <div class="col-lg-4">
+        <span class="footer-brand">CLUB FGE · INPT</span>
+        <p class="footer-tagline">Forum GENI Entreprises · INPT Rabat</p>
+      </div>
+      <div class="col-lg-8 d-flex justify-content-lg-end mt-4 mt-lg-0">
+        <nav class="footer-nav">
+          <a href="#accueil">Accueil</a>
+          <a href="#histoire">Histoire</a>
+          <a href="#staff">Staff</a>
+          <a href="#stats">Chiffres</a>
+          <a href="#partenaires">Partenaires</a>
+          <a href="#inscription" style="color:var(--gold);">S'inscrire</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <p class="footer-copy">© 2026 <span>Forum GENI Entreprises</span>. Tous droits réservés.</p>
+      <p class="footer-copy">INPT · Rabat · Maroc</p>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" title="Retour en haut">↑</button>
+
+<div id="ecolesModal" class="ecoles-modal-overlay">
+  <div class="ecoles-modal">
+    <button class="ecoles-modal-close" id="closeModal">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="ecoles-modal-header">
+      <div class="eyebrow justify-content-center">Organisé par</div>
+      <h2 class="display-title mt-2">Les <em>3 Écoles</em></h2>
+      <p class="ecoles-modal-sub">Le Forum GENI Entreprises est co-organisé par trois grandes écoles d'ingénieurs du Maroc.</p>
+    </div>
+    <div class="ecoles-circle-container">
+      <div class="ecoles-center-badge">
+        <div class="ecoles-center-text">FGE</div>
+        <div class="ecoles-center-sub">Forum GENI</div>
+      </div>
+      <div class="ecole-node ecole-node-1">
+        <div class="ecole-card">
+          <div class="ecole-logo-circle"><span>INPT</span></div>
+          <div class="ecole-name">Institut National des Postes et Télécommunications</div>
+        </div>
+      </div>
+      <div class="ecole-node ecole-node-2">
+        <div class="ecole-card">
+          <div class="ecole-logo-circle ecole-logo-2"><span>ENSIAS</span></div>
+          <div class="ecole-name">École Nationale Supérieure d'Informatique et d'Analyse des Systèmes</div>
+        </div>
+      </div>
+      <div class="ecole-node ecole-node-3">
+        <div class="ecole-card">
+          <div class="ecole-logo-circle ecole-logo-3"><span>INSEA</span></div>
+          <div class="ecole-name">Institut National de Statistique et d'Économie Appliquée</div>
+        </div>
+      </div>
+      <svg class="ecoles-lines-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:rgba(201,147,58,0.6)"/>
+            <stop offset="100%" style="stop-color:rgba(201,147,58,0.1)"/>
+          </linearGradient>
+        </defs>
+        <line x1="250" y1="250" x2="250" y2="60" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="6,4" class="ecole-line"/>
+        <line x1="250" y1="250" x2="65" y2="390" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="6,4" class="ecole-line"/>
+        <line x1="250" y1="250" x2="435" y2="390" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="6,4" class="ecole-line"/>
+        <circle cx="250" cy="250" r="185" fill="none" stroke="rgba(201,147,58,0.08)" stroke-width="1" stroke-dasharray="4,6"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+const cur=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
+function animCursor(){cur.style.left=mx+'px';cur.style.top=my+'px';rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animCursor);}
+animCursor();
+document.querySelectorAll('a,button,.pole-card,.logo-card,.stat-block,.mission-item,.stat-clickable,.ecole-choice,.statut-choice').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.style.width='20px';cur.style.height='20px';ring.style.width='60px';ring.style.height='60px';ring.style.borderColor='rgba(201,147,58,0.7)';});
+  el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';ring.style.width='36px';ring.style.height='36px';ring.style.borderColor='rgba(201,147,58,0.5)';});
+});
+
+const ecolesCard=document.getElementById('ecolesCard');
+const modal=document.getElementById('ecolesModal');
+const closeBtn=document.getElementById('closeModal');
+ecolesCard.addEventListener('click',()=>{
+  modal.classList.add('open');document.body.style.overflow='hidden';
+  setTimeout(()=>{
+    document.querySelectorAll('.ecole-line').forEach((l,i)=>{setTimeout(()=>l.classList.add('drawn'),i*200);});
+    document.querySelectorAll('.ecole-node').forEach((n,i)=>{setTimeout(()=>n.classList.add('appeared'),i*180+100);});
+  },200);
+});
+function closeModal(){modal.classList.remove('open');document.body.style.overflow='';document.querySelectorAll('.ecole-line').forEach(l=>l.classList.remove('drawn'));document.querySelectorAll('.ecole-node').forEach(n=>n.classList.remove('appeared'));}
+closeBtn.addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+
+const canvas=document.getElementById('heroCanvas');
+const ctx=canvas.getContext('2d');
+let W,H;
+function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}
+resize();window.addEventListener('resize',()=>{resize();init();});
+let mouseX=W/2,mouseY=H/2;
+window.addEventListener('mousemove',e=>{mouseX=e.clientX;mouseY=e.clientY;});
+let cvs=[],caps=[],particles=[];
+function rand(a,b){return a+Math.random()*(b-a);}
+function makeCV(){return{x:rand(0,W),y:rand(0,H),vx:rand(-0.18,0.18),vy:rand(-0.15,0.15),angle:rand(-0.2,0.2),rotSpeed:rand(-0.002,0.002),scale:rand(0.75,1.25),alpha:rand(0.22,0.42),pulse:Math.random()*Math.PI*2};}
+function makeCap(){return{x:rand(0,W),y:rand(0,H),vx:rand(-0.15,0.15),vy:rand(-0.22,-0.06),angle:rand(-0.15,0.15),rotSpeed:rand(-0.0018,0.0018),scale:rand(0.95,1.55),alpha:rand(0.20,0.38),pulse:Math.random()*Math.PI*2};}
+function makeParticle(){return{x:rand(0,W),y:rand(0,H),vx:rand(-0.12,0.12),vy:rand(-0.18,-0.04),r:rand(0.7,2.0),alpha:rand(0.12,0.45),pulse:Math.random()*Math.PI*2,pulseSpeed:rand(0.007,0.018)};}
+function init(){cvs=Array.from({length:13},makeCV);caps=Array.from({length:9},makeCap);particles=Array.from({length:52},makeParticle);}
+init();
+function drawCV(x,y,angle,scale,alpha){const w=70*scale,h=92*scale;ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.globalAlpha=alpha;ctx.shadowColor='rgba(201,147,58,0.18)';ctx.shadowBlur=20*scale;const bg=ctx.createLinearGradient(-w/2,-h/2,w/2,h/2);bg.addColorStop(0,'rgba(20,12,3,0.62)');bg.addColorStop(1,'rgba(10,6,1,0.45)');ctx.fillStyle=bg;ctx.strokeStyle='rgba(201,147,58,0.25)';ctx.lineWidth=1;roundRect(ctx,-w/2,-h/2,w,h,5*scale);ctx.fill();ctx.stroke();ctx.shadowBlur=0;const hdr=ctx.createLinearGradient(-w/2,-h/2,w/2,-h/2+13*scale);hdr.addColorStop(0,'rgba(180,120,18,0.85)');hdr.addColorStop(1,'rgba(210,155,35,0.75)');ctx.fillStyle=hdr;ctx.fillRect(-w/2,-h/2,w,13*scale);ctx.fillStyle='rgba(245,220,160,0.95)';ctx.font=`bold ${9*scale}px sans-serif`;ctx.textAlign='center';ctx.fillText('CV',0,-h/2+9*scale);ctx.fillStyle='rgba(201,147,58,0.28)';[0.72,0.52,0.78,0.48,0.62].forEach((lw,i)=>{ctx.fillRect(-w/2+7*scale,-h/2+(20+i*11)*scale,w*lw-14*scale,1.2*scale);});ctx.restore();}
+function drawCap(x,y,angle,scale,alpha){ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.globalAlpha=alpha;const s=scale*28;ctx.shadowColor='rgba(201,147,58,0.12)';ctx.shadowBlur=14*scale;ctx.fillStyle='rgba(148,98,5,0.6)';ctx.beginPath();ctx.ellipse(0,s*0.18,s*0.65,s*0.23,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='rgba(8,8,12,0.8)';ctx.beginPath();ctx.ellipse(0,s*0.12,s*0.48,s*0.17,0,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;const bg=ctx.createLinearGradient(-s*0.72,-s*0.58,s*0.72,s*0.18);bg.addColorStop(0,'rgba(28,28,38,0.82)');bg.addColorStop(1,'rgba(7,7,11,0.82)');ctx.fillStyle=bg;ctx.strokeStyle='rgba(50,50,70,0.18)';ctx.lineWidth=0.7;ctx.beginPath();ctx.moveTo(0,-s*0.75);ctx.lineTo(s*1.05,s*0.04);ctx.lineTo(0,s*0.26);ctx.lineTo(-s*1.05,s*0.04);ctx.closePath();ctx.fill();ctx.stroke();ctx.fillStyle='rgba(170,122,8,0.65)';ctx.shadowColor='rgba(201,147,58,0.28)';ctx.shadowBlur=5*scale;ctx.beginPath();ctx.arc(s*0.58,-s*0.02,2.5*scale,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;ctx.restore();}
+function roundRect(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.lineTo(x+w-r,y);c.quadraticCurveTo(x+w,y,x+w,y+r);c.lineTo(x+w,y+h-r);c.quadraticCurveTo(x+w,y+h,x+w-r,y+h);c.lineTo(x+r,y+h);c.quadraticCurveTo(x,y+h,x,y+h-r);c.lineTo(x,y+r);c.quadraticCurveTo(x,y,x+r,y);c.closePath();}
+function loop(){ctx.clearRect(0,0,W,H);
+particles.forEach(p=>{p.x+=p.vx+(mouseX-W/2)*0.00002;p.y+=p.vy+(mouseY-H/2)*0.00002;p.pulse+=p.pulseSpeed;if(p.y<-10)p.y=H+10;if(p.x<-10)p.x=W+10;if(p.x>W+10)p.x=-10;const a=p.alpha*(0.45+0.55*Math.sin(p.pulse));ctx.save();ctx.globalAlpha=a;const g=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*5);g.addColorStop(0,'rgba(201,147,58,0.25)');g.addColorStop(1,'rgba(201,147,58,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(p.x,p.y,p.r*5,0,Math.PI*2);ctx.fill();ctx.fillStyle='rgba(232,200,130,0.88)';ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();ctx.restore();});
+for(let i=0;i<particles.length;i+=2){for(let j=i+2;j<particles.length;j+=2){const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<110){ctx.save();ctx.globalAlpha=(1-d/110)*0.04;ctx.strokeStyle='rgba(201,147,58,1)';ctx.lineWidth=0.35;ctx.setLineDash([2,14]);ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.stroke();ctx.setLineDash([]);ctx.restore();}}}
+cvs.forEach(c=>{c.x+=c.vx+(mouseX-W/2)*0.00004;c.y+=c.vy+(mouseY-H/2)*0.00004;c.angle+=c.rotSpeed;c.pulse+=0.014;if(c.x<-130)c.x=W+130;if(c.x>W+130)c.x=-130;if(c.y<-130)c.y=H+130;if(c.y>H+130)c.y=-130;drawCV(c.x,c.y,c.angle,c.scale,c.alpha*(0.78+0.22*Math.sin(c.pulse)));});
+caps.forEach(c=>{c.x+=c.vx+(mouseX-W/2)*0.000035;c.y+=c.vy;c.angle+=c.rotSpeed;c.pulse+=0.014;if(c.y<-100)c.y=H+100;if(c.x<-100)c.x=W+100;if(c.x>W+100)c.x=-100;drawCap(c.x,c.y,c.angle,c.scale,c.alpha*(0.78+0.22*Math.sin(c.pulse)));});
+requestAnimationFrame(loop);}
+loop();
+
+function makeObserver(){return new IntersectionObserver((entries,obs)=>{entries.forEach(e=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('revealed'),+(e.target.dataset.delay||0));obs.unobserve(e.target);}});},{threshold:0.12});}
+document.querySelectorAll('[data-reveal]').forEach(el=>makeObserver().observe(el));
+document.querySelectorAll('[data-reveal-left]').forEach(el=>makeObserver().observe(el));
+document.querySelectorAll('[data-reveal-right]').forEach(el=>makeObserver().observe(el));
+document.querySelectorAll('.mission-bar').forEach(b=>{new IntersectionObserver((entries,obs)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('active');obs.unobserve(e.target);}});},{threshold:0.5}).observe(b);});
+document.querySelectorAll('[data-count]').forEach(el=>{new IntersectionObserver((entries,obs)=>{entries.forEach(e=>{if(e.isIntersecting){const target=+el.dataset.count;let cur=0,step=target/60;const t=setInterval(()=>{cur=Math.min(cur+step,target);el.textContent=Math.floor(cur);if(cur>=target)clearInterval(t);},16);obs.unobserve(el);}});},{threshold:0.5}).observe(el);});
+const nav=document.getElementById('mainNav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>60));
+
+let selectedStatut=null,selectedEcoleEtudiant=null,selectedEcoleDiplome=null;
+document.querySelectorAll('.input-custom').forEach(input=>{
+  input.addEventListener('focus',()=>input.parentElement.classList.add('focused'));
+  input.addEventListener('blur',()=>{input.parentElement.classList.remove('focused');if(input.value)input.parentElement.classList.add('filled');else input.parentElement.classList.remove('filled');});
+});
+document.querySelectorAll('.statut-choice').forEach(el=>{
+  el.addEventListener('click',()=>{
+    document.querySelectorAll('.statut-choice').forEach(e=>e.classList.remove('active'));
+    el.classList.add('active');selectedStatut=el.dataset.value;
+    const blocE=document.getElementById('blocEtudiant'),blocD=document.getElementById('blocDiplome');
+    [blocE,blocD].forEach(b=>b.classList.remove('visible'));
+    if(selectedStatut==='etudiant'){blocE.style.display='block';setTimeout(()=>blocE.classList.add('visible'),10);blocD.style.display='none';}
+    else{blocD.style.display='block';setTimeout(()=>blocD.classList.add('visible'),10);blocE.style.display='none';}
+    selectedEcoleEtudiant=null;selectedEcoleDiplome=null;
+    document.querySelectorAll('.ecole-choice').forEach(e=>e.classList.remove('active'));
+  });
+});
+document.querySelectorAll('[data-group="etudiant"]').forEach(el=>{
+  el.addEventListener('click',()=>{
+    document.querySelectorAll('[data-group="etudiant"]').forEach(e=>e.classList.remove('active'));
+    el.classList.add('active');selectedEcoleEtudiant=el.dataset.value;
+    const wrap=document.getElementById('autreEcoleEtudiantWrap');
+    if(selectedEcoleEtudiant==='__autre_e__'){wrap.style.display='block';setTimeout(()=>wrap.classList.add('visible'),10);document.getElementById('autreEcoleEtudiant').focus();}
+    else{wrap.classList.remove('visible');setTimeout(()=>{wrap.style.display='none';},350);}
+  });
+});
+document.querySelectorAll('[data-group="diplome"]').forEach(el=>{
+  el.addEventListener('click',()=>{
+    document.querySelectorAll('[data-group="diplome"]').forEach(e=>e.classList.remove('active'));
+    el.classList.add('active');selectedEcoleDiplome=el.dataset.value;
+    const wrap=document.getElementById('autreEcoleDiplomeWrap');
+    if(selectedEcoleDiplome==='__autre_d__'){wrap.style.display='block';setTimeout(()=>wrap.classList.add('visible'),10);document.getElementById('autreEcoleDiplome').focus();}
+    else{wrap.classList.remove('visible');setTimeout(()=>{wrap.style.display='none';},350);}
+  });
+});
+function setupUpload(inputId,zoneId,innerId){
+  const input=document.getElementById(inputId),inner=document.getElementById(innerId);
+  if(!input)return;
+  input.addEventListener('change',()=>{
+    const file=input.files[0];if(!file)return;
+    const kb=(file.size/1024).toFixed(0);
+    inner.innerHTML=`<div class="upload-icon upload-icon--done"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><p class="upload-title upload-title--done">${file.name}</p><p class="upload-sub">${kb} Ko — <span style="color:var(--gold);cursor:pointer;" onclick="document.getElementById('${inputId}').click()">Changer</span></p>`;
+    document.getElementById(zoneId).classList.add('upload-done');
+  });
+}
+setupUpload('carteEtudianteFile','uploadCarteZone','uploadCarteInner');
+setupUpload('diplomeFile','uploadDiplomeZone','uploadDiplomeInner');
+document.getElementById('submitBtn').addEventListener('click',()=>{
+  const nom=document.getElementById('nomComplet').value.trim(),dob=document.getElementById('dateNaissance').value,cin=document.getElementById('cinInput').value.trim(),email=document.getElementById('emailInscription').value.trim();
+  const showErr=msg=>{const b=document.getElementById('formError');b.textContent=msg;b.style.display='flex';b.classList.remove('shake');void b.offsetWidth;b.classList.add('shake');b.scrollIntoView({behavior:'smooth',block:'center'});};
+  document.getElementById('formError').style.display='none';
+  if(!nom)return showErr('Veuillez saisir votre nom complet.');
+  if(!dob)return showErr('Veuillez indiquer votre date de naissance.');
+  if(!cin)return showErr('Veuillez saisir votre numéro CIN.');
+  if(!selectedStatut)return showErr('Veuillez sélectionner votre statut.');
+  if(selectedStatut==='etudiant'){
+    if(!selectedEcoleEtudiant)return showErr('Veuillez sélectionner votre école.');
+    if(selectedEcoleEtudiant==='__autre_e__'&&!document.getElementById('autreEcoleEtudiant').value.trim())return showErr('Veuillez saisir le nom de votre établissement.');
+    if(!document.getElementById('carteEtudianteFile').files[0])return showErr('Veuillez joindre votre carte étudiante.');
+  }
+  if(selectedStatut==='jeune-diplome'){
+    if(!selectedEcoleDiplome)return showErr("Veuillez sélectionner votre école d'obtention.");
+    if(selectedEcoleDiplome==='__autre_d__'&&!document.getElementById('autreEcoleDiplome').value.trim())return showErr('Veuillez saisir le nom de votre établissement.');
+    if(!document.getElementById('diplomeFile').files[0])return showErr('Veuillez joindre votre diplôme ou attestation.');
+  }
+  if(!email||!email.includes('@'))return showErr('Veuillez saisir une adresse e-mail valide.');
+  document.getElementById('submitBtnText').style.display='none';
+  document.getElementById('submitBtnLoader').style.display='inline-flex';
+  document.getElementById('submitBtn').disabled=true;
+  setTimeout(()=>{
+    document.getElementById('inscriptionForm').style.display='none';
+    const s=document.getElementById('inscriptionSuccess');s.style.display='flex';
+    setTimeout(()=>s.classList.add('visible'),10);
+    document.getElementById('successName').textContent=nom;
+    document.getElementById('successEmail').textContent=email;
+  },1800);
+});
+
+const slider = document.getElementById('navigationSlider');
+const sliderFill = document.getElementById('sliderFill');
+const sliderValueText = document.getElementById('sliderValueText');
+const sliderValueNum = document.getElementById('sliderValueNum');
+const THUMB_HALF = 9;
+const sliderLabels = ['Très difficile','Difficile','Pénible','Passable','Neutre','Correcte','Fluide','Très fluide','Excellente','Parfaite !'];
+function updateSlider() {
+  const val = parseInt(slider.value);
+  const min = parseInt(slider.min);
+  const max = parseInt(slider.max);
+  const ratio = (val - min) / (max - min);
+  const trackWidth = slider.offsetWidth;
+  const usableWidth = trackWidth - THUMB_HALF * 2;
+  const fillWidth = ratio * usableWidth;
+  sliderFill.style.width = fillWidth + 'px';
+  sliderValueText.textContent = sliderLabels[val - 1];
+  sliderValueNum.textContent = val + ' / 10';
+}
+slider.addEventListener('input', updateSlider);
+window.addEventListener('resize', updateSlider);
+window.addEventListener('load', updateSlider);
+updateSlider();
+</script>
+
+
+<script>
+$(document).ready(function () {
+
+  // 1. Navbar transparente au départ, colorée au scroll
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 60) {
+      $('#mainNav').css({'background': 'rgba(2,12,27,0.97)', 'box-shadow': '0 2px 30px rgba(201,147,58,0.15)', 'backdrop-filter': 'blur(16px)'});
+    } else {
+      $('#mainNav').css({'background': 'transparent', 'box-shadow': 'none', 'backdrop-filter': 'blur(0px)'});
+    }
+    if ($(this).scrollTop() > 300) { $('#backToTop').fadeIn(400); }
+    else { $('#backToTop').fadeOut(400); }
+  });
+
+  // 2. Badge dynamique Édition 2026
+  var badge = $('<span>').text('Édition 2026').css({
+    'background': 'linear-gradient(90deg, #c9933a, #e8c87a)',
+    'color': '#000', 'font-size': '1rem', 'font-weight': '700',
+    'padding': '4px 16px', 'border-radius': '20px',
+    'display': 'inline-block', 'margin-top': '12px', 'letter-spacing': '0.05em'
+  });
+  $('.hero-main-title').after(badge);
+
+  // 3. Bouton Hide/Show partenaires
+  var btnToggle = $('<div>').css({'text-align': 'center', 'margin-bottom': '30px'});
+  var btn = $('<button>').text('Masquer les partenaires').addClass('btn-gold').css({'cursor': 'pointer', 'border': 'none'});
+  btnToggle.append(btn);
+  $('#partenaires .container').prepend(btnToggle);
+  btn.click(function () {
+    var $rows = $('#partenaires .row');
+    if ($rows.is(':visible')) { $rows.slideUp(500); $(this).text('Afficher les partenaires'); }
+    else { $rows.slideDown(500); $(this).text('Masquer les partenaires'); }
+  });
+
+  // 4. Back to Top clic
+  $('#backToTop').click(function () { $('html, body').animate({scrollTop: 0}, 600); });
+
+  // Fix décalage navbar
+  $('a[href^="#"]').on('click', function (e) {
+    var href = this.getAttribute('href');
+    if (href === '#') return;
+    var target = $(href);
+    if (target.length) {
+      e.preventDefault();
+      var navHeight = $('#mainNav').outerHeight();
+      $('html, body').animate({ scrollTop: target.offset().top - navHeight }, 600);
+    }
+  });
+
+  // INSTRUCTION 1 — Dynamically add a new activity card (= pôle card)
+  var newPole = $('<div>').addClass('col-md-4').html(
+    '<div class="pole-card" style="position:relative;">' +
+      '<div class="pole-card-top-line"></div>' +
+      '<div class="pole-number">04</div>' +
+      '<div class="pole-card-inner">' +
+        '<div class="pole-icon-wrap">' +
+          '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>' +
+        '</div>' +
+        '<div class="pole-title">Pôle Communication</div>' +
+        '<div class="pole-sub">Relations & Médias</div>' +
+        '<p class="pole-desc">Gère la communication interne et externe, ainsi que la présence digitale du forum.</p>' +
+      '</div>' +
+    '</div>'
+  );
+  $('#staff .row.g-4').append(newPole);
+
+  // INSTRUCTION 2 — Remove a team member card on delete click (Except leader = card 01)
+  $('#staff .pole-card').each(function (index) {
+    if (index !== 0) {
+      var $card = $(this);
+      var $deleteBtn = $('<button>').html('✕').css({
+        'position': 'absolute', 'top': '12px', 'right': '12px',
+        'background': 'rgba(239,68,68,0.15)', 'border': '1px solid rgba(239,68,68,0.4)',
+        'color': '#f87171', 'border-radius': '6px',
+        'width': '28px', 'height': '28px', 'font-size': '0.75rem',
+        'cursor': 'pointer', 'line-height': '1', 'z-index': '10',
+        'transition': 'background 0.2s'
+      });
+      $deleteBtn.hover(
+        function () { $(this).css('background', 'rgba(239,68,68,0.35)'); },
+        function () { $(this).css('background', 'rgba(239,68,68,0.15)'); }
+      );
+      $deleteBtn.on('click', function () {
+        $card.closest('.col-md-4').fadeOut(400, function () { $(this).remove(); });
+      });
+      $card.css('position', 'relative').append($deleteBtn);
+    }
+  });
+
+  // INSTRUCTION 3 — Change all section titles' colors using ONE jQuery selector
+  $('.display-title').css('color', '#c9933a');
+
+  // INSTRUCTION 4 — Append a "New" badge to the first partner logo-card
+  var $newBadge = $('<span>').text('New').css({
+    'position': 'absolute', 'top': '-10px', 'right': '-10px',
+    'background': 'linear-gradient(90deg, #c9933a, #e8c87a)',
+    'color': '#000', 'font-size': '0.65rem', 'font-weight': '700',
+    'padding': '3px 10px', 'border-radius': '20px',
+    'letter-spacing': '1px', 'text-transform': 'uppercase',
+    'box-shadow': '0 2px 10px rgba(201,147,58,0.4)'
+  });
+  $('#partenaires .logo-card').first().css('position', 'relative').append($newBadge);
+
+});
+</script>
+
+
+<script>
+$(document).ready(function () {
+
+  // EVENT 1 — Hover animation on cards
+  $('.pole-card, .logo-card').on('mouseenter', function () {
+    $(this).css({
+      'transform': 'translateY(-8px) scale(1.03)',
+      'box-shadow': '0 20px 50px rgba(201,147,58,0.25)',
+      'transition': 'transform 0.3s ease, box-shadow 0.3s ease'
+    });
+  }).on('mouseleave', function () {
+    $(this).css({ 'transform': 'translateY(0) scale(1)', 'box-shadow': '' });
+  });
+
+  // EVENT 2 & 3 — Simple clic = alert / Double-clic = enlarge
+  var clickTimer = null;
+  $('#staff .pole-card').on('click', function (e) {
+    if ($(e.target).closest('button').length) return;
+    var $card = $(this);
+    if (clickTimer) {
+      clearTimeout(clickTimer); clickTimer = null;
+      if ($card.data('enlarged')) {
+        $card.css({ 'transform': 'scale(1)', 'z-index': '', 'transition': 'transform 0.3s ease' });
+        $card.data('enlarged', false);
+      } else {
+        $card.css({ 'transform': 'scale(1.12)', 'z-index': '50', 'transition': 'transform 0.3s ease' });
+        $card.data('enlarged', true);
+      }
+    } else {
+      clickTimer = setTimeout(function () {
+        clickTimer = null;
+        var poleName = $card.find('.pole-title').text();
+        alert('Vous avez sélectionné : ' + poleName);
+      }, 280);
+    }
+  });
+
+  // EVENT 4 — Tooltip on nav-brand & footer-brand hover
+  var $tooltip = $('<div>').css({
+    'position': 'fixed', 'background': 'rgba(201,147,58,0.95)',
+    'color': '#000', 'padding': '6px 14px', 'border-radius': '8px',
+    'font-size': '0.78rem', 'font-weight': '600', 'pointer-events': 'none',
+    'z-index': '9999', 'display': 'none', 'letter-spacing': '0.04em',
+    'box-shadow': '0 4px 16px rgba(0,0,0,0.3)'
+  }).appendTo('body');
+
+  $('.nav-brand, .footer-brand').on('mouseenter', function (e) {
+    $tooltip.text('Forum GENI Entreprises — INPT Rabat').css({
+      'left': e.clientX + 14 + 'px', 'top': e.clientY + 14 + 'px'
+    }).fadeIn(200);
+  }).on('mousemove', function (e) {
+    $tooltip.css({ 'left': e.clientX + 14 + 'px', 'top': e.clientY + 14 + 'px' });
+  }).on('mouseleave', function () { $tooltip.fadeOut(150); });
+
+  // EVENT 5 — Keyboard changes background color
+  var bgColors = ['#020c1b', '#0d1f0d', '#1a0d0d', '#0d0d1a', '#1a1200'];
+  var bgLabels = ['Bleu nuit (original)', 'Vert sombre', 'Rouge sombre', 'Violet sombre', 'Or sombre'];
+  var bgIndex = 0;
+  var $keyIndicator = $('<div>').css({
+    'position': 'fixed', 'bottom': '80px', 'right': '24px',
+    'background': 'rgba(201,147,58,0.9)', 'color': '#000',
+    'padding': '8px 16px', 'border-radius': '8px', 'font-size': '0.8rem',
+    'font-weight': '700', 'z-index': '9998', 'display': 'none', 'pointer-events': 'none'
+  }).appendTo('body');
+
+  $(document).on('keyup', function (e) {
+    var ignored = ['Escape','Tab','Shift','Control','Alt','Meta','CapsLock','Enter','Backspace','Delete','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'];
+    if (ignored.indexOf(e.key) !== -1) return;
+    bgIndex = (bgIndex + 1) % bgColors.length;
+    var newColor = bgColors[bgIndex];
+    $('html, body').attr('style', 'background-color: ' + newColor + ' !important;');
+    $('header, section, footer, .hero-new, .histoire-section, .staff-section, .stats-section, .partners-section, .inscription-section, .site-footer').attr('style', function(i, s){ return (s||'') + 'background: ' + newColor + ' !important;'; });
+    $keyIndicator.text('🎨 ' + bgLabels[bgIndex]).fadeIn(100).delay(1200).fadeOut(400);
+  });
+
+});
+</script>
+
+
+<script>
+$(document).ready(function () {
+
+  // ANIMATION 1 — Scroll progress bar en haut de page
+  var $progressBar = $('<div>').css({
+    'position': 'fixed', 'top': '0', 'left': '0',
+    'height': '3px', 'width': '0%',
+    'background': 'linear-gradient(90deg, #c9933a, #e8c87a, #c9933a)',
+    'z-index': '99999', 'pointer-events': 'none',
+    'transition': 'width 0.1s linear'
+  }).appendTo('body');
+
+  $(window).on('scroll.progress', function () {
+    var scrollTop = $(this).scrollTop();
+    var docHeight = $(document).height() - $(this).height();
+    var pct = (scrollTop / docHeight) * 100;
+    $progressBar.css('width', pct + '%');
+  });
+
+  // ANIMATION 2 — Sliding announcement banner
+  $('head').append('<style>' +
+    '#fgeBanner .banner-track span { display:inline-block; animation: fgeBannerScroll 26s linear infinite; }' +
+    '@keyframes fgeBannerScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }' +
+  '</style>');
+
+  var $banner = $('<div id="fgeBanner">').html(
+    '<div style="display:flex;align-items:center;height:36px;overflow:hidden;">' +
+      '<span id="fgeBannerClose" style="color:rgba(201,147,58,0.7);cursor:pointer;padding:0 14px;font-size:0.75rem;flex-shrink:0;">✕</span>' +
+      '<div class="banner-track" style="overflow:hidden;white-space:nowrap;font-size:0.74rem;letter-spacing:1.5px;color:rgba(232,200,122,0.9);font-family:Outfit,sans-serif;font-weight:500;flex:1;">' +
+        '<span>🎓 Forum GENI Entreprises 2026 — Inscriptions ouvertes &nbsp;·&nbsp; 📅 2000+ étudiants &nbsp;·&nbsp; 🏆 30+ Entreprises &nbsp;·&nbsp; 📍 INPT · ENSIAS · INSEA — Rabat &nbsp;&nbsp;&nbsp;&nbsp; 🎓 Forum GENI Entreprises 2026 — Inscriptions ouvertes &nbsp;·&nbsp; 📅 2000+ étudiants &nbsp;·&nbsp; 🏆 30+ Entreprises &nbsp;·&nbsp; 📍 INPT · ENSIAS · INSEA — Rabat &nbsp;&nbsp;&nbsp;&nbsp;</span>' +
+      '</div>' +
+    '</div>'
+  ).css({
+    'position': 'fixed', 'top': '0', 'left': '0', 'right': '0',
+    'background': 'linear-gradient(90deg,rgba(10,6,1,0.97),rgba(25,15,2,0.97))',
+    'border-bottom': '1px solid rgba(201,147,58,0.35)',
+    'z-index': '99998', 'transform': 'translateY(-100%)',
+    'transition': 'transform 0.5s cubic-bezier(0.22,1,0.36,1)'
+  }).appendTo('body');
+
+  setTimeout(function () {
+    $banner.css('transform', 'translateY(0)');
+    $('#mainNav').css('top', '36px');
+  }, 900);
+
+  $(document).on('click', '#fgeBannerClose', function () {
+    $banner.css('transform', 'translateY(-100%)');
+    $('#mainNav').animate({ top: '0' }, 500);
+  });
+
+  // ANIMATION 3 — Animate hero text on page load (staggered)
+  $('.hero-word').each(function (i) {
+    var $el = $(this);
+    $el.css({ opacity: 0, transform: 'translateY(38px) skewY(4deg)' });
+    setTimeout(function () {
+      $el.css({ transition: 'opacity 0.85s cubic-bezier(0.22,1,0.36,1), transform 0.85s cubic-bezier(0.22,1,0.36,1)', opacity: 1, transform: 'translateY(0) skewY(0)' });
+    }, 250 + i * 200);
+  });
+
+  // ANIMATION 4 — Cards bounce slightly on hover
+  $('head').append('<style>@keyframes fgeBounce{0%,100%{transform:translateY(0)}35%{transform:translateY(-10px)}65%{transform:translateY(-4px)}}.fge-bouncing{animation:fgeBounce 0.55s ease both!important;}</style>');
+  $(document).on('mouseenter', '.pole-card, .stat-block, .logo-card', function () {
+    var $el = $(this);
+    if ($el.hasClass('fge-bouncing')) return;
+    $el.addClass('fge-bouncing');
+    setTimeout(function () { $el.removeClass('fge-bouncing'); }, 560);
+  });
+
+  // ANIMATION 5 — Sections fade in when entering the viewport
+  $('section').each(function () {
+    var $sec = $(this);
+    $sec.css({ opacity: 0, transform: 'translateY(30px)', transition: 'opacity 0.8s ease, transform 0.8s ease' });
+    var obs = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) {
+        $sec.css({ opacity: 1, transform: 'translateY(0)' });
+        obs.disconnect();
+      }
+    }, { threshold: 0.08 });
+    obs.observe(this);
+  });
+
+});
+</script>
+
+
+<script>
+$(document).ready(function () {
+
+  // TRAVERSING 1 — Click a team member → highlight it, remove highlight from siblings
+  $('head').append('<style>.pole-highlight{border-color:#c9933a!important;background:rgba(201,147,58,0.1)!important;box-shadow:0 0 28px rgba(201,147,58,0.22)!important;}.pole-highlight .pole-card-top-line{opacity:1!important;}</style>');
+  $(document).on('click', '.pole-card', function (e) {
+    if ($(e.target).closest('button').length) return;
+    // Traverse to parent row, find all sibling pole-cards, remove highlight
+    $(this).closest('.row').find('.pole-card').not(this).removeClass('pole-highlight');
+    $(this).toggleClass('pole-highlight');
+  });
+
+  // TRAVERSING 2 — Select first and last activity card, style them differently
+  var $cols = $('#staff .row.g-4 > .col-md-4');
+  // First card — gold border + Leader badge
+  $cols.first().find('.pole-card')
+    .css({ 'border-color': 'rgba(201,147,58,0.55)', 'background': 'rgba(201,147,58,0.07)' })
+    .append($('<span>').text('⭐ Leader').css({ position:'absolute', bottom:'14px', left:'50%', transform:'translateX(-50%)', background:'linear-gradient(90deg,#c9933a,#e8c87a)', color:'#000', fontSize:'0.62rem', fontWeight:'700', padding:'3px 11px', borderRadius:'20px', whiteSpace:'nowrap', letterSpacing:'1px' }));
+  // Last card — blue accent
+  $cols.last().find('.pole-card')
+    .css({ 'border-color': 'rgba(59,130,246,0.45)', 'background': 'rgba(59,130,246,0.06)' })
+    .append($('<span>').text('✨ Nouveau').css({ position:'absolute', bottom:'14px', left:'50%', transform:'translateX(-50%)', background:'rgba(59,130,246,0.18)', border:'1px solid rgba(59,130,246,0.4)', color:'#93c5fd', fontSize:'0.62rem', fontWeight:'700', padding:'3px 11px', borderRadius:'20px', whiteSpace:'nowrap', letterSpacing:'1px' }));
+
+  // TRAVERSING 3 — Use .find() to modify an element inside each card
+  $('#staff .pole-card').each(function () {
+    var $icon = $(this).find('.pole-icon-wrap'); // .find() traversal
+    $(this).on('mouseenter', function () {
+      $(this).find('.pole-icon-wrap').css({ 'box-shadow': '0 0 18px rgba(201,147,58,0.45)', 'background': 'rgba(201,147,58,0.18)', 'transition': 'all 0.3s' });
+    }).on('mouseleave', function () {
+      $(this).find('.pole-icon-wrap').css({ 'box-shadow': 'none', 'background': 'rgba(201,147,58,0.06)' });
+    });
+  });
+
+  // TRAVERSING 4 — Use .parent() to change card background when inner button is clicked
+  $(document).on('click', '.pole-card > button', function () {
+    // .parent() goes from the button up to the .pole-card
+    $(this).parent('.pole-card').css({ 'background': 'rgba(239,68,68,0.09)', 'border-color': 'rgba(239,68,68,0.35)', 'transition': 'all 0.3s' });
+  });
+
+  // TRAVERSING 5 — Count how many cards exist and display the number dynamically
+  function updateCount() {
+    var n = $('#staff .pole-card').length;
+    $('#fgeCardCount').html('<span style="color:#c9933a;font-size:1.1rem;font-weight:700;">' + n + '</span> pôle' + (n > 1 ? 's' : '') + ' actif' + (n > 1 ? 's' : ''));
+  }
+  var $counter = $('<div id="fgeCardCount">').css({ textAlign:'center', marginBottom:'22px', fontSize:'0.78rem', letterSpacing:'2px', textTransform:'uppercase', fontFamily:'Outfit,sans-serif', color:'rgba(255,255,255,0.35)' });
+  $('#staff .text-center.mb-5').after($counter);
+  updateCount();
+  $(document).on('click', '.pole-card > button', function () { setTimeout(updateCount, 420); });
+
+});
+</script>
+
+
+<script>
+$(document).ready(function () {
+
+  // CHAINING 1 — Hide, change color, and fade in an element in ONE chained statement
+  $('.gold-bar')
+    .hide()
+    .css({ 'background': 'linear-gradient(90deg,#c9933a,#e8c87a,#c9933a)', 'box-shadow': '0 0 10px rgba(201,147,58,0.35)', 'border-radius': '4px' })
+    .fadeIn(1000);
+
+  // CHAINING 2 — Animate and style a card using only one chained command
+  $('.missions-card')
+    .css({ opacity: 0, transform: 'scale(0.96)', transition: 'none' })
+    .delay(400)
+    .animate({ opacity: 1 }, {
+      duration: 900,
+      step: function (now) { $(this).css('transform', 'scale(' + (0.96 + now * 0.04) + ')'); }
+    })
+    .css('border-color', 'rgba(201,147,58,0.28)');
+
+  // CHAINING 3 — Select all cards and apply multiple CSS changes using chaining
+  $('.logo-card')
+    .css('cursor', 'pointer')
+    .css('border-radius', '14px')
+    .css('transition', 'transform 0.4s cubic-bezier(0.22,1,0.36,1), border-color 0.3s, box-shadow 0.4s')
+    .attr('title', 'Partenaire officiel FGE 2026');
+
+});
+</script>
+
+
+<script>
+$(document).ready(function () {
+
+  // ADVANCED 1 — Background image/color slider for the hero section
+  var heroThemes = [
+    'rgba(0,0,0,0.30)',
+    'rgba(0,20,8,0.38)',
+    'rgba(20,4,4,0.38)',
+    'rgba(4,4,22,0.38)',
+    'rgba(18,10,0,0.38)'
+  ];
+  var heroIdx = 0;
+  setInterval(function () {
+    heroIdx = (heroIdx + 1) % heroThemes.length;
+    $('.hero-bg-overlay').animate({ opacity: 0 }, 700, function () {
+      $(this).css('background', heroThemes[heroIdx]).animate({ opacity: 1 }, 700);
+    });
+  }, 4500);
+
+  // ADVANCED 2 — Parallax scrolling effect
+  $(window).on('scroll.parallax', function () {
+    var st = $(this).scrollTop();
+    $('.hero-bg-img').css('transform', 'translateY(' + (st * 0.38) + 'px) scale(1.06)');
+    $('.hist-watermark').css('transform', 'translate(-50%, calc(-50% + ' + (st * 0.12) + 'px))');
+    $('.hist-glow-1').css('transform', 'translateY(' + (st * 0.07) + 'px)');
+    $('.stats-center-glow').css('transform', 'translate(-50%,-50%) translateY(' + (st * 0.05) + 'px)');
+  });
+
+  // ADVANCED 3 — Typing animation for the hero title
+  var words = ['Entreprises', "l'Avenir", "l'Excellence", "l'Innovation", "votre Carrière"];
+  var wi = 0, ci = 0, deleting = false;
+  var $t = $('.hero-word.accent');
+  setTimeout(function () {
+    function tick() {
+      var w = words[wi];
+      ci = deleting ? ci - 1 : ci + 1;
+      $t.text(deleting ? w.substring(0, ci) : w.substring(0, ci));
+      var spd = deleting ? 55 : 90;
+      if (!deleting && ci === w.length) { spd = 2000; deleting = true; }
+      else if (deleting && ci === 0) { deleting = false; wi = (wi + 1) % words.length; spd = 320; }
+      setTimeout(tick, spd);
+    }
+    tick();
+  }, 3200);
+
+  // ADVANCED 4 — Modal popup that appears after 10 seconds
+  $('head').append('<style>' +
+    '#fgeTimedModal{position:fixed;inset:0;background:rgba(0,0,0,0.82);backdrop-filter:blur(10px);z-index:100000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.45s;}' +
+    '#fgeTimedModal.show{opacity:1;pointer-events:all;}' +
+    '#fgeTimedModal .tbox{background:linear-gradient(135deg,#07111e,#030c18);border:1px solid rgba(201,147,58,0.28);border-radius:22px;padding:46px;max-width:440px;width:90%;text-align:center;position:relative;transform:scale(0.88);transition:transform 0.5s cubic-bezier(0.22,1,0.36,1);}' +
+    '#fgeTimedModal.show .tbox{transform:scale(1);}' +
+    '#fgeTimedModal .tbox::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#c9933a,transparent);border-radius:22px 22px 0 0;}' +
+    '#fgeTimedModal .tcls{position:absolute;top:14px;right:14px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:7px;color:rgba(255,255,255,0.45);cursor:pointer;width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:0.85rem;transition:all 0.2s;}' +
+    '#fgeTimedModal .tcls:hover{background:rgba(255,255,255,0.12);color:#fff;}' +
+  '</style>');
+
+  var $tModal = $('<div id="fgeTimedModal">').html(
+    '<div class="tbox">' +
+      '<button class="tcls" id="closeTModal">✕</button>' +
+      '<div style="font-size:2.4rem;margin-bottom:14px;">🎓</div>' +
+      '<div style="font-family:Cormorant Garamond,serif;font-size:1.75rem;font-weight:600;color:#fff;margin-bottom:10px;">Prêt à rejoindre le Forum ?</div>' +
+      '<p style="color:rgba(255,255,255,0.42);font-size:0.88rem;line-height:1.7;margin-bottom:24px;">Plus de <strong style="color:#e8c87a;">2000 étudiants</strong> inscrits. Ne manquez pas <strong style="color:#e8c87a;">30+ entreprises</strong> de renom.</p>' +
+      '<button id="tModalCta" style="padding:12px 28px;background:linear-gradient(90deg,#c9933a,#e8c87a);color:#000;font-weight:700;border:none;border-radius:6px;cursor:pointer;font-size:0.87rem;">S\'inscrire maintenant →</button>' +
+    '</div>'
+  ).appendTo('body');
+
+  setTimeout(function () { $tModal.addClass('show'); }, 10000);
+  $(document).on('click', '#closeTModal', function () { $tModal.removeClass('show'); });
+  $(document).on('click', '#tModalCta', function () {
+    $tModal.removeClass('show');
+    setTimeout(function () { $('html,body').animate({ scrollTop: $('#inscription').offset().top - 80 }, 600); }, 300);
+  });
+  $tModal.on('click', function (e) { if ($(e.target).is('#fgeTimedModal')) $tModal.removeClass('show'); });
+
+  // ADVANCED 5 — Scroll progress indicator (already done in Animations block above — variant: circular badge)
+  var $scrollBadge = $('<div>').css({
+    position:'fixed', bottom:'100px', left:'24px',
+    width:'44px', height:'44px', borderRadius:'50%',
+    background:'rgba(2,12,27,0.88)', border:'2px solid rgba(201,147,58,0.25)',
+    display:'flex', alignItems:'center', justifyContent:'center',
+    fontSize:'0.62rem', fontWeight:'700', color:'#c9933a',
+    fontFamily:'Outfit,sans-serif', zIndex:'9997',
+    boxShadow:'0 4px 16px rgba(0,0,0,0.35)', letterSpacing:'0',
+    transition:'border-color 0.3s'
+  }).text('0%').appendTo('body');
+
+  $(window).on('scroll.badge', function () {
+    var pct = Math.round(($(this).scrollTop() / ($(document).height() - $(this).height())) * 100);
+    $scrollBadge.text(pct + '%').css('border-color', pct > 50 ? 'rgba(201,147,58,0.7)' : 'rgba(201,147,58,0.25)');
+  });
+
+});
+</script>
+
+
+<script>
+$(document).ready(function () {
+
+  // SMART LOGIC 1 — Prevent scrolling and show a "lock overlay" after scrolling 300px
+  $('head').append('<style>' +
+    '#fgeLockOverlay{position:fixed;inset:0;background:rgba(2,12,27,0.93);backdrop-filter:blur(8px);z-index:80000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.4s;}' +
+    '#fgeLockOverlay.active{opacity:1;pointer-events:all;}' +
+    '#fgeLockOverlay .lbox{text-align:center;}' +
+    '#fgeLockOverlay .licon{font-size:2.8rem;display:block;margin-bottom:14px;animation:lockpulse 2s ease-in-out infinite;}' +
+    '@keyframes lockpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}' +
+    '#fgeLockOverlay .ltitle{font-family:Cormorant Garamond,serif;font-size:1.9rem;color:#fff;margin-bottom:8px;}' +
+    '#fgeLockOverlay .lsub{color:rgba(255,255,255,0.38);font-size:0.85rem;margin-bottom:24px;line-height:1.6;}' +
+    '#fgeLockOverlay .lbtn{padding:11px 30px;background:linear-gradient(90deg,#c9933a,#e8c87a);color:#000;font-weight:700;border:none;border-radius:6px;cursor:pointer;font-size:0.86rem;transition:transform 0.2s;}' +
+    '#fgeLockOverlay .lbtn:hover{transform:translateY(-2px);}' +
+  '</style>');
+
+  var $lockOverlay = $('<div id="fgeLockOverlay">').html(
+    '<div class="lbox">' +
+      '<span class="licon">🔒</span>' +
+      '<div class="ltitle">Session en pause</div>' +
+      '<p class="lsub">Vous avez défilé rapidement.<br>Reprenez votre exploration du Forum.</p>' +
+      '<button class="lbtn" id="fgeUnlock">Reprendre la visite</button>' +
+    '</div>'
+  ).appendTo('body');
+
+  var lockShown = false;
+  $(window).on('scroll.lock', function () {
+    if (!lockShown && $(this).scrollTop() > 300) {
+      lockShown = true;
+      $lockOverlay.addClass('active');
+      $('body').css('overflow', 'hidden');
+    }
+  });
+
+  $(document).on('click', '#fgeUnlock', function () {
+    $lockOverlay.removeClass('active');
+    $('body').css('overflow', '');
+  });
+
+  // SMART LOGIC 2 — Dark mode toggle using jQuery
+  $('head').append('<style>' +
+    '#fgeDarkToggle{position:fixed;bottom:148px;right:38px;width:46px;height:46px;border-radius:50%;background:rgba(2,12,27,0.9);border:1px solid rgba(201,147,58,0.4);color:#c9933a;font-size:1.25rem;cursor:pointer;z-index:9999;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(0,0,0,0.4);transition:transform 0.3s,background 0.3s;}' +
+    '#fgeDarkToggle:hover{transform:translateY(-3px) rotate(18deg);}' +
+    'body.fge-light{background:#f4efe4!important;color:#1a1200!important;}' +
+    'body.fge-light section,body.fge-light .histoire-section,body.fge-light .staff-section,body.fge-light .stats-section,body.fge-light .partners-section,body.fge-light .inscription-section,body.fge-light .site-footer{background:linear-gradient(170deg,#f4efe4,#ece3cf)!important;}' +
+    'body.fge-light .hist-big-quote,body.fge-light .missions-title-text,body.fge-light .pole-title,body.fge-light .display-title{color:#1a1200!important;}' +
+    'body.fge-light .hist-body-text,body.fge-light .pole-desc,body.fge-light .stat-label{color:rgba(26,18,0,0.55)!important;}' +
+    'body.fge-light .pole-card,body.fge-light .stat-block,body.fge-light .logo-card,body.fge-light .missions-card,body.fge-light .inscription-card{background:rgba(255,255,255,0.75)!important;border-color:rgba(201,147,58,0.22)!important;}' +
+    'body.fge-light .input-custom{background:rgba(0,0,0,0.04)!important;color:#1a1200!important;}' +
+    'body.fge-light #mainNav{background:rgba(244,239,228,0.97)!important;}' +
+    'body.fge-light .nav-brand,body.fge-light .nav-item-link{color:#1a1200!important;}' +
+  '</style>');
+
+  var isDark = true;
+  var $darkBtn = $('<button id="fgeDarkToggle" title="Mode clair / sombre">🌙</button>').appendTo('body');
+
+  $darkBtn.on('click', function () {
+    isDark = !isDark;
+    $('body').toggleClass('fge-light', !isDark);
+    $(this).text(isDark ? '🌙' : '☀️').css('background', isDark ? 'rgba(2,12,27,0.9)' : 'rgba(255,255,255,0.88)');
+  });
+
+});
+</script>
+
+</body>
+</html>
